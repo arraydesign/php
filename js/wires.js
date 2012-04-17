@@ -70,7 +70,7 @@ $j(document).ready(function(){
 
 /* Grid */
 	  	
-	$j(document).bind('keydown', 'Ctrl+g', function() {
+	$j(document).jkey('control+g', function() {
 		$j('ul#grid').toggle();
 	});
 	
@@ -95,24 +95,6 @@ $j(document).ready(function(){
 	$j("figure").append("<a href='#' class='caption'>i</a>");
    $j("figure a.caption").click(function() {
 		$j(this).prev().toggle();
-	});
-
-/* Canvas */
-	
-	if ($docWidth < 1200 && $docWidth > 1026) {
-		var $i = (848 - (($docWidth/1200) * 848));
-		draw($i);
-	} else {
-		var $i = 0;
-		draw($i);
-	}
-	
-	$j(window).resize(function() {
-		$docWidth = $j(window).width();
-		if ($docWidth < 1200 && $docWidth > 1026) {
-			var $i = (848 - (($docWidth/1200) * 848));
-			draw($i);
-		}
 	});
 
 /* Carousel
@@ -151,31 +133,43 @@ $j(document).ready(function(){
 /* Fancybox
 	
 	$j("span.gallery-icon a").fancybox({
-		'titleShow'			:	true,
-		'overlayColor'		:	'#000',
-		'overlayOpacity'	:	0.9,
-		'centerOnScroll'	:	true,
-		'titlePosition' 	: 'outside'
-	});
-	
-	$j(".fb-inline").fancybox({
-		'autoDimensions'	:	true,
-		'titleShow'			:	false,
-		'overlayColor'		:	'#000',
-		'overlayOpacity'	:	0.9,
-		'centerOnScroll'	:	true
+		openEffect 			: 'none',
+    	closeEffect			: 'none',
+    	maxWidth				:	900,
+    	maxHeight			:	768,
+    	fitToView			:	true,
+    	aspectRatio			:	true,
+    	closeBtn				:	true,
+    	arrows				:	true,
+    	helpers				:	{
+			title					:	{
+				type					:	'inside'
+			},
+			overlay				:	{
+				opacity				:	0.9,
+				css					:	{
+					'background-color'	:	'#000000'
+				}
+			},
+		}
 	});
 	
 	$j(".fb-iframe").fancybox({
-		'type'				: 'iframe',
-		'onStart'			:	function(){ $j.fancybox.showActivity; },	
-		'autoDimensions'	:	true,
-		'titleShow'			:	false,
-		'overlayColor'		:	'#000',
-		'overlayOpacity'	:	0.9,
-		'width'				:	692,
-		'height'				:	450,
-		'centerOnScroll'	:	true
+		type					: 'iframe',
+		autoSize				:	true,
+		width					:	692,
+		height				:	450,
+		helpers				:	{
+			title					:	{
+				type					:	'inside'
+			},
+			overlay				:	{
+				opacity				:	0.9,
+				css					:	{
+					'background-color'	:	'#000000'
+				}
+			},
+		}
 	}); */
 
 });

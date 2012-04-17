@@ -16,22 +16,14 @@
 	<!-- <meta property="og:image" content="<?= $baseurl ?>css/assets/LOGO.gif" /> -->
 	<title><?= $pagename ?>&mdash;Wireframes</title>
 	<link rel="stylesheet" href="<?= $burl ?>style.css" type="text/css" media="screen" />
-	<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/lte-ie9.css" /><![endif]-->
-	<!--[if IE 8]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/ie8.css" /><![endif]-->
-	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href=<?= $burl ?>"css/ie7.css" /><![endif]-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	<!-- <script type="text/javascript">
-		WebFont.load({
-			typekit: { id: 'xxxxxx' },
-			custom: { families: ['optima-std'], urls: ['/css/assets/'] }
-		});
-	</script> -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="<?= $burl ?>js/jquery.hotkeys.js"></script>
-	<script type="text/javascript" src="<?= $burl ?>js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="<?= $burl ?>js/jquery.min.js"></script>
 	<script type="text/javascript">var $j = jQuery.noConflict(), $docWidth = $j(window).width();</script>
-	<!-- <script type="text/javascript" src="js/paper.js"></script>
-	<script type="text/paperscript" src="js/canvasId.js" canvas="canvasId"></script> -->
+<?php if (is_ie()) { ?>
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/ie8.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href=<?= $burl ?>"css/ie7.css" /><![endif]-->
+<?php } else { ?>
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/lte-ie9.css" /><![endif]-->
+<?php } ?>
 </head>
 
 <body id="<?= $basepage ?>" class="<?= $baseclass ?>"> 

@@ -42,7 +42,7 @@
 }
 
 
-/* MOBILE: Column 3
+/* MOBILE
 --------------------------------------------------------------  */
 
 @media screen and (max-width: 592px) {
@@ -79,7 +79,7 @@
 }
 
 
-/* SMALL: Column 6
+/* SMALL
 -------------------------------------------------------------- */
 
 @media screen and (min-width: 593px) and (max-width: 849px) {

@@ -17,40 +17,60 @@ include('header.php'); ?>
 		</div>
 		
 		<script type="text/javascript">
-			function draw($i) {
-
-				myCanvas($i);
-				function myCanvas($i) {
-					
-					$j('#myCanvas').attr('width', (848 - $i))
-					console.log( $i, $docWidth );
-					var $source = $j('#myCanvas').find('> img').attr('src');
-					var ctx = $j('#myCanvas')[0].getContext('2d');
-	
-			      ctx.beginPath();
-			      ctx.moveTo(26.6, 0.0);
-			      ctx.bezierCurveTo(6.9, 48.3, 0.0, 108.9, 0.0, 169.7);
-			      ctx.bezierCurveTo(0.0, 236.1, 7.5, 300.0, 28.1, 350.0);
-			      ctx.lineTo((819.9 - $i), 350.0);
-//				   ctx.lineTo(696.9, 350.0);
-			      ctx.bezierCurveTo((840.5 - $i), 300.0, (848.0 - $i), 236.1, (848.0 - $i), 169.7);
-//				   ctx.bezierCurveTo(717.5, 300.0, 725.0, 236.1, 725.0, 169.7);
-			      ctx.bezierCurveTo((848.0 - $i), 108.9, (841.1 - $i), 48.3, (821.4 - $i), 0.0);
-//				   ctx.bezierCurveTo(725.0, 108.9, 718.1, 48.3, 698.4, 0.0);
-			      ctx.lineTo(26.6, 0.0);
-			      ctx.closePath();
-//			      ctx.fillStyle = "rgb(53, 150, 207)";
-//			      ctx.fill();
-					ctx.clip()
-					
-			      ctx.drawImage($j("#selected img")[0], (0 - ($i / 2)), -60);
-					/* var img = new Image();
-					img.onload = function(){
-						ctx.drawImage(img,0,0,848,350);
-					};
-					img.src = $source; */
+			$j(document).ready(function(){
+				
+				if ($docWidth < 1200 && $docWidth > 1026) {
+					var $i = (848 - (($docWidth/1200) * 848));
+					draw($i);
+				} else {
+					var $i = 0;
+					draw($i);
 				}
-			}
+				
+				$j(window).resize(function() {
+					$docWidth = $j(window).width();
+					if ($docWidth < 1200 && $docWidth > 1026) {
+						var $i = (848 - (($docWidth/1200) * 848));
+						draw($i);
+					}
+				});
+				
+				function draw($i) {
+	
+					myCanvas($i);
+					function myCanvas($i) {
+						
+						$j('#myCanvas').attr('width', (848 - $i))
+						console.log( $i, $docWidth );
+						var $source = $j('#myCanvas').find('> img').attr('src');
+						var ctx = $j('#myCanvas')[0].getContext('2d');
+		
+				      ctx.beginPath();
+				      ctx.moveTo(26.6, 0.0);
+				      ctx.bezierCurveTo(6.9, 48.3, 0.0, 108.9, 0.0, 169.7);
+				      ctx.bezierCurveTo(0.0, 236.1, 7.5, 300.0, 28.1, 350.0);
+				      ctx.lineTo((819.9 - $i), 350.0);
+	//				   ctx.lineTo(696.9, 350.0);
+				      ctx.bezierCurveTo((840.5 - $i), 300.0, (848.0 - $i), 236.1, (848.0 - $i), 169.7);
+	//				   ctx.bezierCurveTo(717.5, 300.0, 725.0, 236.1, 725.0, 169.7);
+				      ctx.bezierCurveTo((848.0 - $i), 108.9, (841.1 - $i), 48.3, (821.4 - $i), 0.0);
+	//				   ctx.bezierCurveTo(725.0, 108.9, 718.1, 48.3, 698.4, 0.0);
+				      ctx.lineTo(26.6, 0.0);
+				      ctx.closePath();
+	//			      ctx.fillStyle = "rgb(53, 150, 207)";
+	//			      ctx.fill();
+						ctx.clip()
+						
+				      ctx.drawImage($j("#selected img")[0], (0 - ($i / 2)), -60);
+						/* var img = new Image();
+						img.onload = function(){
+							ctx.drawImage(img,0,0,848,350);
+						};
+						img.src = $source; */
+					}
+				}
+							
+			})
 		</script>
 				
 		<div class="genbox col-full border">
