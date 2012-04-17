@@ -1,0 +1,151 @@
+/* HOME
+-------------------------------------------------------------- */
+
+#home .main .col-3 {width:29.9145%;}
+
+#home .main .col-2 {width:46.5812%;}
+
+
+/* FORMS
+-------------------------------------------------------------- */
+
+#forms fieldset.col-2 {width:47.4359%;}
+
+#forms .tel-row, #forms .postal-row {
+    float: left;
+    width: 46.87%;
+}
+
+#forms .tel-row label, #forms .postal-row label {
+    min-width: 31%;
+    padding: 0 2.12766%;
+}
+
+#forms .tel-row {
+    margin-right: 2.88%;
+}
+
+/* MEDIA
+-------------------------------------------------------------- */
+
+#media .main > img:first-of-type {
+    margin-top: 14px;
+}
+
+#media .main .col-full p > .alignleft {
+    top: -4px;
+    width: 31%;
+}
+
+#media .main .col-full p > .alignright {
+    width: 30.4%;
+}
+
+
+/* MOBILE: Column 3
+--------------------------------------------------------------  */
+
+@media screen and (max-width: 592px) {
+	#home .main .col-3 {
+    width: 25.8065%;
+	}
+	
+	#home .main .col-2 {
+    width: 42.47312%;
+	}
+	
+	#forms fieldset.col-2 {
+    width: 92.4731%;
+	}
+	
+	#forms .tel-row, #forms .postal-row {
+    float: none;
+    width: auto;
+    margin-right: 0;
+	}
+	
+	#forms .tel-row label, #forms .postal-row label {
+    min-width: 31%;
+    padding: 0 1%;
+	}
+	
+	#media .main .col-full p > img.left {
+    width: 63.9535%;
+	}
+
+	#media .main .col-full p > img.right {
+    width: 65.2%;
+	}
+}
+
+
+/* SMALL: Column 6
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 593px) and (max-width: 849px) {
+	#home .main .col-3 {
+    width: 27.0833%;
+	}
+	
+	#home .main .col-2 {
+    width: 43.75%;
+	}
+	
+	#forms fieldset.col-2 {
+    width: 45.8333%;
+	}
+	
+	#forms .tel-row, #forms .postal-row {
+    float: none;
+    width: auto;
+    margin-right: 0;
+	}
+	
+	#forms .tel-row label, #forms .postal-row label {
+    min-width: 24.5%;
+    padding: 0 1%;
+	}
+	
+	#media .main .col-full p > img.left {
+    width: 46.6667%;
+	}
+
+	#media .main .col-full p > img.right {
+    width: 46.4%;
+	}
+}
+
+
+/* MEDIUM: Column 9
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 850px) and (max-width: 1025px) {
+	#home .main .col-3 {
+    width: 29.0123%;
+	}
+	
+	#home .main .col-2 {
+    width: 45.679%;
+	}
+	
+	#forms fieldset.col-2 {width: 47.1193%;}
+	
+	#forms .tel-row, #forms .postal-row {
+    float: none;
+    width: auto;
+    margin-right: 0;
+	}
+	
+	#forms .tel-row label, #forms .postal-row label {
+    min-width: 20.9%;
+    padding: 0 1%;
+	}
+	
+	#media .main .col-full p > img.left {
+    width: 30.4897%;
+	}
+
+	#media .main .col-full p > img.right {
+    width: 29.4%;
+	}
+}

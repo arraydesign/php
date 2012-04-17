@@ -1,0 +1,941 @@
+body {
+    background: url("assets/BG-body.gif") repeat-y scroll center top #EEEEEE;
+    text-align: center;
+}
+
+.wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 1026px;
+    min-height: 100%;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* HEADER
+-------------------------------------------------------------- */
+
+header {
+height:111px;
+border-bottom:1px solid black;
+display:block;
+}
+
+#logo {
+    color: black;
+    display: block;
+    font-size: 27px;
+    line-height: 27px;
+    margin: 0 auto;
+    min-width: 140px;
+    padding: 10px 0;    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 18px;
+    vertical-align: middle;
+    width: 21.7%;
+}
+
+nav {
+    bottom: -1px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0 auto;
+    text-align: center;
+    width: 269px;
+}
+
+nav ul li {
+    border-top:1px solid black;
+    border-left:1px solid black;
+}
+
+nav ul li a {
+    background:#eeeeee none repeat scroll 0 0;
+    border-bottom:1px solid black;
+    float:left;
+    padding:9px 18px 8px;
+}
+
+nav ul li a:hover {
+    background: white;
+}
+
+nav ul #current-tab {
+    background: white;
+    border-bottom:1px solid white;
+}
+
+nav ul li:last-child {
+    border-right:1px solid black;
+}
+
+
+/* CONTENT
+-------------------------------------------------------------- */
+
+
+.content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    margin: 0 0 49px;
+    padding-bottom: 14px;
+    padding-top: 6px;
+}
+
+.main {
+    float: left;
+    margin-left: 1.25%;
+    padding-bottom: 35px;
+    width: 73.125%;
+}
+
+.main.full {
+    margin-right: 1.25%;
+    width: 97.5%;
+}
+
+.genbox {
+    float:left;}
+
+.main .genbox {
+    margin-left: 1.709402%;
+    margin-right: 1.709402%;
+}
+
+.main.full .genbox {
+    margin: 0 1.28205%;
+}
+
+.col-full {
+clear:left;
+float: none;
+display:block;
+}
+
+.border {
+outline:1px solid #999999;
+}
+
+.main .border {
+    margin: 7px 1.7094%;
+    padding: 0 1.7094% 14px;
+}
+
+.main.full .border {
+    padding-left: 1.32864%;
+    padding-right: 1.32864%;
+}
+
+#bread-crumbs {
+font-size:10px;
+overflow:hidden;
+padding-bottom:6px;
+padding-top:12px;
+text-transform:uppercase;
+}
+
+#bread-crumbs ul li {
+margin-right:6px;
+}
+
+#bread-crumbs ul li:after {
+content: ">";
+}
+
+#bread-crumbs ul li:last-child:after {
+content: none;
+}
+
+#bread-crumbs ul li a {
+color:black;
+margin-right:6px;
+}
+
+
+/* CONTENT: Images & Gallery
+-------------------------------------------------------------- */
+
+img, iframe, embed, video {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    max-width: 96.5812%;
+}
+
+img {
+height: auto;
+}
+
+iframe, embed, video {
+min-width: 54%;
+}
+
+figure {}
+
+figcaption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    display: none;
+    padding: 12px 0 12px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+figure > a.caption {
+    background: none repeat scroll 0 0 #000000;
+    border: 3px solid #FFFFFF;
+    border-radius: 17px 17px 17px 17px;
+    color: #FFFFFF;
+    font-family: Georgia,Times,serif;
+    font-size: 15px;
+    font-style: italic;
+    height: 24px;
+    line-height: 24px;
+    opacity: 0.3;
+    outline: medium none;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    text-decoration: none;
+    top: 8px;
+    width: 24px;
+}
+
+figure > a:hover.caption {
+    opacity: 1;
+}
+
+p > img.alignleft, iframe.alignleft, embed.alignleft, video.alignleft, canvas.alignleft {
+margin-right: 3.5%;
+}
+
+p > img.alignright, iframe.alignright, embed.alignright, video.alignright, canvas.alignright {
+margin-left: 3.5%;
+}
+
+.gallery-item {
+    margin-right: 1%;
+    margin-top: 1%;
+    padding: 1px;
+}
+
+.gallery-icon, .thumbnail {
+    border: 3px solid #FFFFFF;
+    display: block;
+    height: 100px;
+    outline: 1px solid gray;
+    width: 100px;
+}
+
+.gallery-item > img, .thumbnail > img, .img-centre > img, .img-centre-w > img, .img-centre-h > img {
+    display: block;
+    left: 50%;
+    margin: 0;
+    max-width: 150%;
+    top: 50%;
+}
+
+.img-centre-w > img {
+    top: auto;
+}
+
+.img-centre-h > img {
+    left: auto;
+}
+
+.img-centre > img, .img-centre-w > img, .img-centre-h > img {
+}
+
+
+/* CONTENT: Forms
+-------------------------------------------------------------- */
+
+fieldset {
+    padding-bottom: 7px;
+    padding-top: 7px;}
+
+fieldset h3:first-child {
+    padding-bottom: 21px;
+}
+
+.fieldrow {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 4px solid #DDDDDD;
+    display: block;
+    margin-bottom: 13px;
+    -o-border-radius: 6px 6px 6px 6px;
+-icab-border-radius: 6px 6px 6px 6px;
+-khtml-border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px 6px 6px 6px;
+-webkit-border-radius: 6px 6px 6px 6px;
+border-radius: 6px 6px 6px 6px;
+}
+
+label {
+    color: gray;
+    float: left;
+    font-size: 15px;
+    font-style: italic;
+    height: 28px;
+    line-height: 27px;
+    margin-right: 6px;
+    min-width: 15%;
+    padding: 0 1%;}
+
+label.for-boxes {
+    background: none repeat scroll 0 0 transparent !important;
+    color: black !important;
+    display: inline-block;
+    float: none;
+    height: 16px;
+    line-height: 14px;
+    margin-top: 5px;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 1.5%;
+    top: 2px;
+}
+
+.fieldrow.textarea label {
+    display: block;
+    float: none;
+    width: 98% !important;
+}
+
+.multiple label + span, .file-row label + span {
+    float: left;
+    width: 81%;
+}
+
+.multiple label + span a.img-txt {
+    background: url("assets/BTN-add.png") no-repeat scroll center center transparent;
+    float: right;
+    height: 28px;
+    width: 4.5%;
+}
+
+.multiple label + span a.subtract {
+    background: url("assets/BTN-subtract.png") no-repeat scroll center center transparent;
+}
+
+.multiple input[type=text] {
+    display: inline;
+    margin-bottom: 12px !important;
+    width: 93%;
+}
+
+.multiple input:last-of-type {
+    margin-bottom: 5px !important;
+}
+
+input {
+    border: medium none;
+    margin: 0;
+    padding: 0;}
+
+select {
+    color: black;
+    display: block;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    height: 28px;
+    margin: 0 !important;
+    padding-top: 4px;    vertical-align: bottom;
+    width: 83%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	select {
+    font-size: 16px;
+    top: 3px;
+	}
+}
+
+input[type=text], input[type=number], input[type=date] {
+    border-bottom: 1px dashed gray;
+    color: black;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    height: 17px;
+    line-height: 21px;
+    margin: 4px 0 5px !important;
+    outline: 5px solid #FFFFFF;
+    padding-top: 1px;
+}
+
+input[type=text] {
+    width: 81%;
+}
+
+input.phone-1, input.phone-2, input.phone-3, 
+input.postal-1, input.postal-2 {
+    display: inline;
+    margin-right: 14px !important;
+    text-align: center;
+    width: 39px !important;
+}
+
+input.phone-1, input.phone-2 {
+    width: 29px !important;
+}
+
+input.phone-3, input.postal-2 {
+    margin-right: 0 !important;
+}
+
+.radio-row, .check-row {
+    background: none repeat scroll 0 0 #eeeeee;
+}
+
+.select-row label, .radio-row label, .check-row label {
+    background: none repeat scroll 0 0 #DDDDDD;
+    margin-right: 0px;
+}
+
+input[type=radio], input[type=checkbox] {
+    height: 13px;
+    margin-left: 1.5%;
+    top: 2px;
+    vertical-align: middle;
+    width: 13px;
+    z-index: 1;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	input[type=radio], input[type=checkbox] {
+    top: -1px;
+	}
+}
+
+.file-row .btn {
+    float: right;
+    right: -3px;
+    top: 0;
+    width: 20.5%;
+}
+
+.file-row .btn span {
+    padding: 0;
+}
+
+input[type=file] {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+input.fake-file {
+    position: absolute;
+    width: 78%;
+    z-index: 5;
+}
+
+input::-webkit-input-placeholder {
+    color: gray;
+    opacity: 0.5;
+}
+input:-moz-placeholder {
+    color: gray;
+}
+
+textarea {
+    background: url("assets/BG-textarea.png") repeat scroll left -2px #FFFFFF;
+    border: medium none;
+    color: black;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 21px;
+    margin: 2px 0 5px !important;
+    min-height: 125px;
+    outline: 5px solid #FFFFFF;
+    padding: 1px 0 0;
+    resize: none;
+    width: 81% !important;
+}
+	
+button, .btn { 
+    background-color: #555555;
+    border: medium none;
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+    padding: 1px;    text-decoration: none;
+    top: 3px;
+-o-border-radius: 2px 2px 2px 2px;
+-icab-border-radius: 2px 2px 2px 2px;
+-khtml-border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+}
+
+button::-moz-focus-inner {
+border: 0;  /* overrides extra padding in Firefox */
+padding: 0;
+margin: 0;
+outline: none;
+}
+
+button span, .btn span { 
+    background-color: #dddddd;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(204,204,204)), color-stop(0.58, rgb(221,221,221)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(204,204,204) 16%, rgb(221,221,221) 58% );
+    color: black;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 26px;
+    line-height: 27px;
+    margin: 0 !important;
+    padding: 0 8px;    text-align: center;
+    text-shadow: 0 1px 0 white;
+    text-transform: uppercase;
+    top: 0;
+    white-space: nowrap;
+}
+
+.btn-lrg {
+    top: -1px;
+}
+
+.btn-lrg span {
+    font-size: 18px;
+    height: 33px;
+    line-height: 36px;
+    padding: 0 12px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	.btn-lrg span {
+    line-height: 34px;
+	}
+}
+
+.btn-small {
+    top: 7px;
+}
+
+.btn-small span {
+    font-size: 12px;
+    height: 19px;
+    line-height: 21px;
+    padding: 0 5px;
+}
+
+.btn-cancel, .btn-cancel span {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.btn-cancel:hover {
+    background-color: #555555;
+}
+
+.btn-cancel:hover span {
+    background-color: #dddddd;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.16, rgb(204,204,204)), color-stop(0.58, rgb(221,221,221)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(204,204,204) 16%, rgb(221,221,221) 58% );
+}
+
+fieldset.submit button, fieldset.submit .btn {
+    float: right;
+    margin-left: 2%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	button span {
+    margin-top: -1px;
+	}
+	label {
+    line-height: 30px;
+	}
+}
+
+
+/* Success, notice and error boxes
+-------------------------------------------------------------- */
+
+.fieldrow.error {
+border: 4px solid red;
+}
+
+.fieldrow.error label {
+background: red;
+color: #ffffff;
+}
+
+
+/* ASIDE
+-------------------------------------------------------------- */
+
+aside {
+    background: none repeat scroll 0 0 #EEEEEE;
+    float: right;
+    margin: 14px 2.5% 14px 0;
+    padding-bottom: 7px;
+    width: 21.875%;
+}
+
+aside .genbox {
+    margin: 0 5.71429%;
+}
+
+aside .border {
+}
+
+
+/* FOOTER
+-------------------------------------------------------------- */
+
+footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid;
+    font-size: 12px;
+    height: 48px;
+    margin: -49px auto 0;
+    max-width: 1200px;
+    min-width: 1026px;
+    padding: 0;
+    width: 100%;
+}
+
+footer div {
+    margin: 0 2.5%;
+    padding-top: 7px;
+}
+
+footer ul {
+    display: block;
+    margin-left: 0;
+    padding-top: 7px;
+}
+
+footer ul li {
+margin-right: 7px;
+}
+
+footer ul li:after {
+content: "|";
+}
+
+footer ul li:last-child:after {
+content: none;
+}
+
+footer ul li a {
+padding-right: 7px;
+}
+
+footer p {
+float:right;
+}
+	
+
+/* MOBILE: Column 3
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 592px) {
+	body {
+    -webkit-text-size-adjust: none;
+    background: url("assets/BG-mob-body.gif") repeat-y scroll center top #EEEEEE;
+	}
+
+	.wrapper, footer {
+    min-width: 320px;
+    max-width: 480px;
+	}
+	
+	.main, aside, .main.full {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    width: 93%;
+	}
+	
+	.main {
+    padding-bottom: 14px;
+	}
+	
+	.main.full {
+    padding-bottom: 7px;
+	}
+	
+	.main .genbox, aside .genbox, .main.full .genbox {
+    margin-left: 3.76344%;
+    margin-right: 3.76344%;
+	}
+	
+	.main .border, .main.full .border {
+    padding-left: 3.76344%;
+    padding-right: 3.76344%;
+	}
+	
+	aside {
+    clear: both;
+    float: none;
+	}
+	
+	form {
+    margin-bottom: 14px;
+	}
+	
+	label {
+    min-width: 31%;
+	}
+	
+	label.for-boxes {
+    padding-right: 1%;
+	}
+	
+	input[type="text"] {
+    width: 64%;
+	}
+	
+	textarea {
+    width: 64% !important;
+	}
+	
+	select {
+    width: 67%;
+	}
+	
+	.multiple label + span, .file-row label + span {
+    width: 64.5%;
+	}
+	
+	.multiple input[type="text"] {
+    width: 84%;
+	}
+	
+	.multiple label + span a.img-txt {
+    width: 10.5%;
+	}
+	
+	input.fake-file {
+    width: 53%;
+	}
+	
+	.file-row .btn {
+    right: -1px;
+    width: 42%;
+	}
+	
+	footer div {
+    margin: 0 7%;
+	}
+}
+
+
+/* SMALL: Column 6
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 593px) and (max-width: 849px) {
+	body {
+    background: url("assets/BG-small-body.gif") repeat-y scroll center top #EEEEEE;
+	}
+	
+	.wrapper, footer {
+    min-width: 593px;
+    max-width: 768px;
+	}
+	
+	.main {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 64%;
+	}
+		
+	.main.full {
+    margin-right: 0;
+    width: 96%;
+	}
+	
+	.main .genbox {
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+	}
+	
+	.main .border {
+    padding-left: 3.125%;
+    padding-right: 3.125%;
+	}
+	
+	.main.full .genbox {
+    margin-left: 2.0833333%;
+    margin-right: 2.0833333%;
+	}
+	
+	.main.full .border {
+    padding-left: 2.0833333%;
+    padding-right: 2.0833333%;
+	}
+	
+	aside {
+    margin-right: 4%;
+    width: 28%;
+	}
+	
+	
+	aside .genbox {
+    margin-left: 7.14286%;
+    margin-right: 7.14286%;
+	}
+	
+	label {
+    min-width: 24.5%;
+	}
+	
+	label.for-boxes {
+    padding-right: 1%;
+	}
+	
+	input[type="text"] {
+    width: 70.2%;
+	}
+	
+	textarea {
+    width: 70.2% !important;
+	}
+	
+	select {
+    width: 73%;
+	}
+	
+	.multiple label + span, .file-row label + span {
+    width: 71.2%;
+	}
+	
+	.multiple input[type="text"] {
+    width: 88%;
+	}
+	
+	.multiple label + span a.img-txt {
+    width: 9%;
+	}
+	
+	input.fake-file {
+    width: 57%;
+	}
+	
+	.file-row .btn {
+    right: 0;
+    width: 38%;
+	}
+	
+	footer div {
+    margin: 0 4%;
+	}
+}
+
+
+/* MEDIUM: Column 9
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 850px) and (max-width: 1025px) {
+	.wrapper, footer {
+    min-width: 850px;
+    max-width: 1025px;
+	}
+	
+	.main {
+    margin-left: 1.4%;
+    margin-right: 1.4%;
+    width: 64.8%;
+	}
+	
+	.main.full {
+    margin-right: 0%;
+    width: 97.2%;
+	}
+	
+	.main .genbox {
+    margin-left: 2.1605%;
+    margin-right: 2.1605%;
+	}
+	
+	.main .border {
+    padding-left: 2.16049%;
+    padding-right: 2.16049%;
+	}
+	
+	.main.full .genbox {
+    margin-left: 1.44033%;
+    margin-right: 1.44033%;
+	}
+	
+	.main.full .border {
+    padding-left: 1.4403292%;
+    padding-right: 1.4403292%;
+	}
+	
+	aside {
+    margin-right: 2.8%;
+    width: 29.6%;
+	}
+	
+	aside .genbox {
+    margin-left: 4.72973%;
+    margin-right: 4.72973%;
+	}
+	
+	label {
+    min-width: 20.9%;
+	}
+	
+	label.for-boxes {
+    padding-right: 1%;
+	}
+	
+	input[type="text"] {
+    width: 74%;
+	}
+	
+	textarea {
+    width: 74% !important;
+	}
+	
+	select {
+    width: 77%;
+	}
+	
+	.multiple label + span, .file-row label + span {
+    width: 75%;
+	}
+	
+	.multiple input[type="text"] {
+    width: 90%;
+	}
+	
+	.multiple label + span a.img-txt {
+    width: 6.5%;
+	}
+	
+	input.fake-file {
+    width: 67%;
+	}
+	
+	.file-row .btn {
+    right: -1px;
+    width: 29.5%;
+	}
+	
+	footer div {
+    margin: 0 2.8%;
+	}
+}

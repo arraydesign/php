@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- Created with Ai->Canvas Export Plug-In Version 1.0 (Mac) -->
+<!-- By Mike Swanson (http://blogs.msdn.com/mswanson/)        -->
+<!-- and MIX Online  (http://visitmix.com/)                   -->
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>canvas-test</title>
+  <script>
+
+    function init() {
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      mask(ctx);
+    }
+
+    function mask(ctx) {
+
+      // mask/Guide
+      ctx.save();
+
+      // mask/Path
+      ctx.beginPath();
+      ctx.moveTo(668.2, 0.0);
+      ctx.lineTo(22.8, 0.0);
+      ctx.bezierCurveTo(6.2, 59.5, 0.0, 127.9, 0.0, 196.5);
+      ctx.bezierCurveTo(0.0, 275.3, 7.4, 351.7, 27.0, 416.0);
+      ctx.lineTo(664.0, 416.0);
+      ctx.bezierCurveTo(683.6, 351.7, 691.0, 275.3, 691.0, 196.5);
+      ctx.bezierCurveTo(691.0, 127.9, 684.8, 59.5, 668.2, 0.0);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(53, 150, 207)";
+      ctx.fill();
+      ctx.restore();
+    }
+  </script>
+ </head>
+ <body onload="init()">
+   <canvas id="canvas" width="691" height="416"></canvas>
+ </body>
+</html>
