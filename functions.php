@@ -15,6 +15,16 @@ function is_ie() {
 }
 
 /**
+ * Returns true if NOT iPhone.
+ */
+function notIphone($user_agent=NULL) {
+    if(!isset($user_agent)) {
+        $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
+    }
+    return (strpos($user_agent, 'iPhone') == FALSE);
+}
+
+/**
  * Sets up the base url.
  */
 $burl = 'http://'. $_SERVER['HTTP_HOST'].'/framework/php/';

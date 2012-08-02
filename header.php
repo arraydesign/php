@@ -1,22 +1,29 @@
 <?php include('functions.php'); ?>
 <?php if ($basepage == '') { $basepage = basename($_SERVER['PHP_SELF'], ".php"); } ?>
 <?php if (is_ie()) { ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><?php } else { ?><!DOCTYPE html><?php } ?>
-<html lang="en" class="wf-inactive">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" class="wf-inactive">
 <head>
 	<style type="text/css" media="screen">html.wf-loading h1, html.wf-loading h2, html.wf-loading h3, html.wf-loading h4, html.wf-loading p, html.wf-loading li, html.wf-loading a, html.wf-loading span, html.wf-loading label, html.wf-loading td, html.wf-loading th, html.wf-loading input, html.wf-loading select, html.wf-loading textarea, html.wf-loading small {visibility: hidden;}
 	</style>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title><?= $pagename ?>&mdash;Wireframes</title>
 	<!-- <link rel="alternate" type="application/rss+xml" title="Title" href="<?= $burl ?>feed.xml"> -->
 	<!-- <link rel="shortcut icon" href="<?= $burl ?>favicon.ico"> -->
 	<!-- <meta name=description content="Description"> -->
 	<!-- <meta name=keywords content="Keywords"> -->
-	<meta name="robots" content="index,follow">
-	<!-- <meta property="og:title" content="Title"> -->
-	<!-- <meta property="og:type" content="Type"> -->
+	<!-- <meta name="author" content="Author"> -->
+	<!-- <meta name="copyright" content="Copyright"> -->
+	<!-- <meta name="twitter:card" content="summary, photo, or player"> -->
+	<!-- <meta name="twitter:site" content="@username of website"> -->
+	<!-- <meta name="twitter:creator" content="@username of content creator"> -->
+	<!-- <meta property="og:site_name" content="Site name"> -->
+	<!-- <meta property="og:title" content="<?= $pagename ?>"> -->
+	<!-- <meta property="og:description" content="Description"> -->
 	<!-- <meta property="og:url" content="<?= $baseurl ?>"> -->
+	<!-- <meta property="og:type" content="Type"> -->
 	<!-- <meta property="og:image" content="<?= $baseurl ?>css/assets/LOGO.gif"> -->
-	<title><?= $pagename ?>&mdash;Wireframes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="robots" content="index,follow">
 	<link rel="stylesheet" href="<?= $burl ?>style.css" type="text/css" media="screen">
 	<script type="text/javascript" src="<?= $burl ?>js/jquery.min.js"></script>
 	<script type="text/javascript">var $j = jQuery.noConflict(), $docWidth = $j(window).width();</script>
