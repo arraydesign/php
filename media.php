@@ -1,5 +1,8 @@
-<?php $pagename = 'Media';
-$basepage = 'media';
+<?php /* $meta_title = ''; */
+/* $meta_desc = ''; */
+/* $meta_keys = ''; */
+/* $basepage = 'media'; */
+/* $baseclass = ''; */
 include('header.php'); ?>
 
 <!-- - - - - - - - - - CONTENT STARTS - - - - - - - - - -->

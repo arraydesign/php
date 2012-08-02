@@ -15,13 +15,26 @@ function is_ie() {
 }
 
 /**
- * Returns true if NOT iPhone.
+ * Detect special conditions devices
  */
-function notIphone($user_agent=NULL) {
-    if(!isset($user_agent)) {
-        $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
-    }
-    return (strpos($user_agent, 'iPhone') == FALSE);
+function whatUserAgent($user_agent=NULL) {
+	if(!isset($user_agent)) {
+		$user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
+	}
+   
+   $iPod = stripos($user_agent,"iPod");
+	$iPhone = stripos($user_agent,"iPhone");
+	$iPad = stripos($user_agent,"iPad");
+	//$Android= stripos($user_agent,"Android");
+	//$webOS= stripos($user_agent,"webOS");
+   
+   if ( $iPod || $iPhone ) {
+		return 'iPhone';
+	} else if($iPad) {
+	   return 'iPad';
+	} else {
+		return 'desktop';
+	}
 }
 
 /**
@@ -44,4 +57,15 @@ function curPageURL() {
 	return $pageURL;
 }
 $curl = curPageURL();
+
+/**
+ * Defines the section variable.
+ */
+$sec_start = '<section class="';
+$sec_end = '</section>';
+if (is_ie()) {
+	$sec_start = '<div class="genbox ';
+	$sec_end = '</div>';
+}
+
 ?>

@@ -1,4 +1,8 @@
-<?php $pagename = 'Forms';
+<?php /* $meta_title = ''; */
+/* $meta_desc = ''; */
+/* $meta_keys = ''; */
+/* $basepage = 'forms'; */
+/* $baseclass = ''; */
 include('header.php'); ?>
 
 <!-- - - - - - - - - CONTENT STARTS - - - - - - - - -->

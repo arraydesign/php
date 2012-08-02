@@ -1,17 +1,18 @@
 <?php include('functions.php'); ?>
 <?php if ($basepage == '') { $basepage = basename($_SERVER['PHP_SELF'], ".php"); } ?>
 <?php if (is_ie()) { ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><?php } else { ?><!DOCTYPE html><?php } ?>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" class="wf-inactive">
-<head>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class="wf-inactive">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 	<style type="text/css" media="screen">html.wf-loading h1, html.wf-loading h2, html.wf-loading h3, html.wf-loading h4, html.wf-loading p, html.wf-loading li, html.wf-loading a, html.wf-loading span, html.wf-loading label, html.wf-loading td, html.wf-loading th, html.wf-loading input, html.wf-loading select, html.wf-loading textarea, html.wf-loading small {visibility: hidden;}
 	</style>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<title><?= $pagename ?>&mdash;Wireframes</title>
-	<!-- <meta name=description content="Description"> -->
-	<!-- <meta name=keywords content="Keywords"> -->
+	<title><?php if ($meta_title) { echo $meta_title; } else { echo 'Wireframes'; } ?></title>
+	<meta name="description" content="<?php if ($meta_desc) { echo $meta_desc; } else { echo 'Description'; } ?>">
+	<meta name="keywords" content="<?php if ($meta_keys) { echo $meta_keys; } else { echo 'Keywords'; } ?>">
 
 	<!-- <meta name="author" content="Author"> -->
 	<!-- <meta name="copyright" content="Copyright"> -->
+
 	<!-- <meta name="twitter:card" content="summary, photo, or player"> -->
 	<!-- <meta name="twitter:site" content="@username of website"> -->
 	<!-- <meta name="twitter:creator" content="@username of content creator"> -->

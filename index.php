@@ -1,5 +1,8 @@
-<?php $pagename = 'Home';
+<?php /* $meta_title = ''; */
+/* $meta_desc = ''; */
+/* $meta_keys = ''; */
 $basepage = 'home';
+/* $baseclass = ''; */
 include('header.php'); ?>
 
 <!-- - - - - - - - - - CONTENT STARTS - - - - - - - - - -->

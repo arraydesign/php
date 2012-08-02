@@ -12,7 +12,6 @@
 		</div>
 	<?php if (is_ie()) { ?></div><?php } else { ?></footer><?php } ?><!-- END footer -->
 	
-	
 	<!-- <script type="text/javascript" src="<?= $burl ?>js/webfont.js"></script>
 	<script type="text/javascript">
 		WebFont.load({
@@ -22,7 +21,6 @@
 	</script> -->
 	<script type="text/javascript" src="<?= $burl ?>js/jquery.jkey.js"></script>
 	<script type="text/javascript" src="<?= $burl ?>js/jquery.fancybox.js"></script>
-	<!-- <script type="text/javascript" src="js/paper.js"></script>  -->
 	<script type="text/javascript" src="<?= $burl ?>js/wires.js"></script>
 <?php if (is_ie()) { ?>
 	<!--[if lte IE 8]><script type="text/javascript" src="<?= $burl ?>js/lte-ie8.js"></script><![endif]-->
