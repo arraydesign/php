@@ -7,31 +7,36 @@
 	</style>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 	<title><?= $pagename ?>&mdash;Wireframes</title>
-	<!-- <link rel="alternate" type="application/rss+xml" title="Title" href="<?= $burl ?>feed.xml"> -->
-	<!-- <link rel="shortcut icon" href="<?= $burl ?>favicon.ico"> -->
 	<!-- <meta name=description content="Description"> -->
 	<!-- <meta name=keywords content="Keywords"> -->
+
 	<!-- <meta name="author" content="Author"> -->
 	<!-- <meta name="copyright" content="Copyright"> -->
 	<!-- <meta name="twitter:card" content="summary, photo, or player"> -->
 	<!-- <meta name="twitter:site" content="@username of website"> -->
 	<!-- <meta name="twitter:creator" content="@username of content creator"> -->
+
 	<!-- <meta property="og:site_name" content="Site name"> -->
 	<!-- <meta property="og:title" content="<?= $pagename ?>"> -->
 	<!-- <meta property="og:description" content="Description"> -->
 	<!-- <meta property="og:url" content="<?= $baseurl ?>"> -->
 	<!-- <meta property="og:type" content="Type"> -->
 	<!-- <meta property="og:image" content="<?= $baseurl ?>css/assets/LOGO.gif"> -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="robots" content="index,follow">
+
+	<!-- <link rel="alternate" type="application/rss+xml" title="Title" href="<?= $burl ?>feed.xml"> -->
+	<!-- <link rel="shortcut icon" href="<?= $burl ?>favicon.ico"> -->
+
 	<link rel="stylesheet" href="<?= $burl ?>style.css" type="text/css" media="screen">
 	<script type="text/javascript" src="<?= $burl ?>js/jquery.min.js"></script>
 	<script type="text/javascript">var $j = jQuery.noConflict(), $docWidth = $j(window).width();</script>
 <?php if (is_ie()) { ?>
-	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/ie8.css" /><![endif]-->
-	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href=<?= $burl ?>"css/ie7.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/lte-ie8.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/ie7.css" /><![endif]-->
 <?php } else { ?>
-	<!--[if IE 9]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/lte-ie9.css" /><![endif]-->
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" media="screen" href="<?= $burl ?>css/ie9.css" /><![endif]-->
 <?php } ?>
 </head>
 
